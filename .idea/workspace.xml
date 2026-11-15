@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c2245a2-1fd4-47d2-8896-a5fe569f8f29" name="Changes" comment="folder structure changed." />
+    <list default="true" id="fdb93b69-bb9b-49eb-b710-41c17a2565e2" name="Changes" comment="week 2 day 01">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Main_Notes_Branch" />
+        <entry key="$PROJECT_DIR$" value="Main_Code_Branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,10 +55,25 @@
       <recent name="D:\Java Project\Habit_Tracker\Learning_Notes\Month_01\Week_01_Notes" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Habit_Tracker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Habit_Tracker" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0c2245a2-1fd4-47d2-8896-a5fe569f8f29" name="Changes" comment="" />
+      <changelist id="fdb93b69-bb9b-49eb-b710-41c17a2565e2" name="Changes" comment="week 2 day 01" />
       <created>1794452079718</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
