@@ -5,6 +5,11 @@ import com.habitflow.DTO.Response.HabitResponse;
 import com.habitflow.Entity.Habit;
 import com.habitflow.repository.HabitRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class HabitService {
@@ -33,6 +38,25 @@ public class HabitService {
         );
     }
 
+
+    public List<HabitResponse> getAllHabit(){
+        List<Habit> habits = habitRepository.findAll();
+
+        return habits.stream().
+                map(habit->
+                        new HabitResponse(
+                                habit.getId(),habit.getName(),habit.getDescription()))
+                .collect(Collectors.toList());
+    }
+
+    public Optional<HabitResponse> getHabitById(Long id){
+        return habitRepository.findById(id)
+                .map(habit->new HabitResponse(
+                        habit.getId(),
+                        habit.getName(),
+                        habit.getDescription()
+                ));
+    }
     //It was Created for the Testing purpose
     public String getWelcomeMessage() {
         System.out.println("Reached Service Class");

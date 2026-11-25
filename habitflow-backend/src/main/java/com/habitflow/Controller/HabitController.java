@@ -9,6 +9,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/api/v1/habits")
 public class HabitController {
@@ -26,9 +29,22 @@ public ResponseEntity<HabitResponse> createHabit(@RequestBody HabitRequest reque
 }
 
 
-    @GetMapping("/status")
-    public String habitStatus(){
-        return "Habit Flow is Running";
+@GetMapping
+  public ResponseEntity<List<HabitResponse>> getAllhabits(){
+        List<HabitResponse> habits = habitService.getAllHabit();
+        return ResponseEntity.ok(habits);
+  }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<HabitResponse> getHabitById(
+            @PathVariable Long id) {
+
+        Optional<HabitResponse> habit =
+                habitService.getHabitById(id);
+
+        return habit
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
 }
