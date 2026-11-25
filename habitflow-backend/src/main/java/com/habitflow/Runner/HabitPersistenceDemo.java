@@ -18,6 +18,7 @@ public class HabitPersistenceDemo implements CommandLineRunner {
     }
     @Override
     public void run(String... args) throws Exception {
+        /*
         Habit habit = new Habit("Read a Book","Read for 30 minutes everyday");
 
         Habit savedHabit = habitRepository.save(habit);
@@ -31,6 +32,6 @@ public class HabitPersistenceDemo implements CommandLineRunner {
             System.out.println(found.getName());
             System.out.println(found.getDescription());
         });
-
+*/
     }
 }
